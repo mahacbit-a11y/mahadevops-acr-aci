@@ -12,7 +12,7 @@ jobs:
     - name: Step 1 - Checkout Repository Source Code
       uses: actions/checkout@v4
     - name: Step 2 - Authenticate and Login to Azure container registry
-        uses: azure/docker-login@v1
+      uses: azure/docker-login@v1
         with:
           login-server: mahaazr.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
