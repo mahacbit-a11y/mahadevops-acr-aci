@@ -18,11 +18,7 @@ jobs:
         username: ${{ secrets.ACR_USERNAME }}
         password: ${{ secrets.ACR_PASSWORD }}
     - name: Step 3 - Build Docker Image and Push to ACR
-      run:| 
+      run: | 
         docker build -t  mahaazr.azurecr.io/my-custom-app:v1
         docker push mahaazr.azurecr.io/my-custom-app:v1
 
-
-:::: handshaking
-name : mahaazr
-pwd : 9HiYtRgqolQIMIUmrnjM21cPq2fpC7QccQdVqYybu2N7sPbAbzwqJQQJ99CIAC77bzfEqg7NAAACAZCRoeTB
